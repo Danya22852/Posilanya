@@ -1,0 +1,35 @@
+body {
+    background: skyblue;
+}
+.block {
+    background: linear-gradient(white, yellow);
+    width: 90%;
+    height: 550px;
+    position: absolute;
+    left: 4.5%;
+    top: 75px;
+    border: 10px black solid;
+    border-radius: 40px;
+}
+ul {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;             
+}
+ul li {
+  display: flex;          
+  flex-direction: row;    
+  align-items: center;    
+  gap: 10px;  
+   margin: 0; 
+  padding: 2px 0;           
+}
+ul li p {
+  margin: 0;
+}
+ul li::before {
+  content: "•";        /* Сама точка (можно заменить на любой символ или смайлик) */
+  color: black;        /* Цвет точки */
+  font-weight: bold;   /* Сделать точку пожирнее */
+  margin-right: 8px;   /* Отступ от точки до текста */
+}
